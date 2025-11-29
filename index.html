@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bottle Viewer</title>
+
+    <!-- Load model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      model-viewer {
+        width: 100%;
+        max-width: 600px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="bottle.glb"
+      alt="3D Bottle"
+      camera-controls
+      disable-pan
+      disable-zoom
+      interaction-prompt="none"
+      camera-orbit="180deg 90deg auto"
+      min-camera-orbit="0deg 90deg auto"
+      max-camera-orbit="360deg 90deg auto">
+    </model-viewer>
+  </body>
+</html>
